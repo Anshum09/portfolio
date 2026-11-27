@@ -93,7 +93,7 @@ function Home() {
       <section className="section" id="work" aria-labelledby="work-h">
         <div className="section-head">
           <h2 id="work-h">Projects</h2>
-          {categories.length > 1 && (
+          {projects.length >= 4 && categories.length > 1 && (
             <div className="filters" role="group" aria-label="Filter projects">
               {['All', ...categories].map((c) => (
                 <button key={c} type="button" aria-pressed={filter === c} onClick={() => setFilter(c)}>

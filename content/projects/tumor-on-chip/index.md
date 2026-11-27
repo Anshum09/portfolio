@@ -1,7 +1,7 @@
 ---
 title: Microfluidic tumor-on-chip device
-summary: A two-layer perfusion chip designed in Fusion 360 to hold cancer cells in a defined chamber under controlled flow.
-category: Microfluidics
+summary: A two-layer perfusion chip for cancer cell culture under controlled flow, designed in Fusion 360.
+category: CAD
 status: Design complete
 date: 2026-11
 tools: [Fusion 360, Python API]
@@ -13,17 +13,15 @@ Standard well-plate culture is static: cells sit in fixed media with no flow. Tu
 
 ## Design
 
-The device is two parts: a channel plate and a thin lid. The lid carries the port holes and seals the channels.
-
-- Two inlets that merge into one channel, so media can be delivered alongside a separate drug or cell stream
-- A serpentine section to mix the streams before they reach the cells
-- A central culture chamber where the cells sit under flow
-- A single outlet for perfusion and effluent collection
-- Chamfered ports intended to support leak-resistant tubing connections
+The device is two parts: a channel plate and a thin lid that seals the channels. Fluid enters through two inlets that merge into one channel, passes through a serpentine section that mixes the streams, then reaches a central culture chamber where the cells sit under flow. A single outlet carries effluent away.
 
 ![Top view of the channel layer: two inlets, serpentine mixer, culture chamber, outlet](02-top-view.png)
 
+The lid carries the port holes, one for each inlet and one for the outlet. Chamfered ports are intended to support leak-resistant tubing connections.
+
 ![Exploded view: channel plate and lid](03-exploded.png)
+
+![The lid, with its three port holes](04-lid.png)
 
 ## Specifications
 
