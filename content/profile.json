@@ -1,28 +1,20 @@
 {
   "name": "Anshum Patel",
-  "tagline": "Bioengineering and pre-med at the University of Pittsburgh.",
+  "tagline": "Bioengineering student at the University of Pittsburgh. Research in tumor microenvironment and cancer biology.",
   "email": "patelanshum5@gmail.com",
+  "resume": "",
   "links": [],
-  "background": [
+  "experience": [
     {
       "role": "Undergraduate researcher",
       "place": "Zervantonakis Lab, University of Pittsburgh",
       "note": "Tumor microenvironment and cancer biology."
     },
     {
-      "role": "Clinical research",
-      "place": "UPMC Magee-Womens Hospital",
-      "note": "500-patient randomized controlled trial on irrigation to prevent infection after breast surgery."
-    },
-    {
-      "role": "Patient transporter",
-      "place": "UPMC Shadyside",
-      "note": "Direct patient care in a hospital setting."
-    },
-    {
       "role": "Teaching assistant",
-      "place": "Department of Physics, University of Pittsburgh",
+      "place": "Physics, University of Pittsburgh",
       "note": ""
     }
-  ]
+  ],
+  "coursework": Statics, Bioinstrumentation ( Linear systems and Electronics ), Signals and Systems, Biothermodynamics, Human Physiology
 }
