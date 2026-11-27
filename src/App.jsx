@@ -27,7 +27,7 @@ function Header({ onProject }) {
         ) : (
           <>
             <a href="#work">Projects</a>
-            <a href="#background">Background</a>
+            <a href="#experience">Experience</a>
             <a href="#contact">Contact</a>
           </>
         )}
@@ -105,8 +105,7 @@ function Home() {
         </div>
         {list.length === 0 ? (
           <p className="empty">
-            No projects yet. Run <code>npm run new "Project name"</code>, fill in the file it creates, and it will
-            appear here.
+            Projects coming soon.
           </p>
         ) : (
           <div className="grid">
@@ -117,19 +116,35 @@ function Home() {
         )}
       </section>
 
-      {profile.background?.length > 0 && (
-        <section className="section" id="background" aria-labelledby="bg-h">
+      {profile.experience?.length > 0 && (
+        <section className="section" id="experience" aria-labelledby="bg-h">
           <div className="section-head">
-            <h2 id="bg-h">Background</h2>
+            <h2 id="bg-h">Research and teaching</h2>
           </div>
           <ul className="bg-list">
-            {profile.background.map((b) => (
+            {profile.experience.map((b) => (
               <li key={b.role + b.place}>
                 <div className="bg-role">{b.role}</div>
                 <div>
                   <div className="bg-place">{b.place}</div>
                   {b.note && <p>{b.note}</p>}
                 </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {profile.coursework?.length > 0 && (
+        <section className="section" id="coursework" aria-labelledby="cw-h">
+          <div className="section-head">
+            <h2 id="cw-h">Coursework</h2>
+          </div>
+          <ul className="bg-list">
+            {profile.coursework.map((c) => (
+              <li key={c.name}>
+                <div className="bg-role">{c.name}</div>
+                <div>{c.note && <p>{c.note}</p>}</div>
               </li>
             ))}
           </ul>
@@ -153,8 +168,12 @@ function Home() {
               </a>
             </li>
           ))}
-          {!profile.email && !(profile.links || []).length && (
-            <li className="empty">Add your email and links in content/profile.json.</li>
+          {profile.resume && (
+            <li>
+              <a href={profile.resume} target="_blank" rel="noreferrer">
+                Resume (PDF)
+              </a>
+            </li>
           )}
         </ul>
       </section>
