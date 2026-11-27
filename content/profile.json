@@ -16,5 +16,14 @@
       "note": ""
     }
   ],
-  "coursework": Statics, Bioinstrumentation ( Linear systems and Electronics ), Signals and Systems, Biothermodynamics, Human Physiology
+  "coursework": [
+    { "name": "Human Physiology", "note": "BIOSC 1250. Completed." },
+    { "name": "Introductory Cell Biology 1", "note": "BIOENG 1070. In progress." },
+    { "name": "Genetics", "note": "BIOSC 0350. In progress." },
+    { "name": "Linear Systems and Electronics 1", "note": "BIOENG 1310. In progress." },
+    { "name": "Introduction to Cell Biology 2", "note": "BIOENG 1071. Spring 2027." },
+    { "name": "Bioengineering Thermodynamics", "note": "BIOENG 1210. Spring 2027." },
+    { "name": "Biological Signals and Systems", "note": "BIOENG 1320. Spring 2027." },
+    { "name": "Biochemistry", "note": "BIOSC 1000. Spring 2027." }
+  ]
 }
